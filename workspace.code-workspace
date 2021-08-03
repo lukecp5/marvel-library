@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "..\\gt-atl-virt-fsf-pt-06-2021-u-c"
+		},
+		{
+			"path": "..\\Portfolio"
+		},
+		{
+			"path": "..\\Password-Generator"
+		},
+		{
+			"path": "..\\Code-Quiz"
+		},
+		{
+			"path": "..\\Work-Day-Scheduler"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\Weather-Dashboard"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Weather-Dashboard"
+	}
+}

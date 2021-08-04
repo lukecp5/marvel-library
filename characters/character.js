@@ -56,12 +56,12 @@ fetch(comicURL)
             }
             var content = `<image src="${thumbnail}.${thumbnailExt}" style="max-width: 25%"><br>Title: ${title}`
             var cardContent = `  <div class="row">
-            <div class="col s10 m8">
+            <div class="col s10 m8 blue">
             <div class="card">
             <div class="card-image col s3">
             <img src="${thumbnail}.${thumbnailExt}" class="circle" width="10vw">
             </div>
-            <h2><span class="card-title">${title}</span></h2>
+            <h2 class="light-blue 600"><span class="card-title">${title}</span></h2>
             </div>
             <div class="card-content">
             <p class="flow-text">${comicDescription}</p>

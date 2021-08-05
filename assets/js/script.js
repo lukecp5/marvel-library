@@ -24,6 +24,7 @@ var charIds = {
   Magneto: 1009417,
   Thor: 1009664,
 };
+
 var ts = Date.now();
 for (char in characters) {
   // Base URL that we insert each characters name into to get their ID and Marvel Name

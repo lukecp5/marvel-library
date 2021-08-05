@@ -1,55 +1,71 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-    <meta charset='UTF-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
     <title>Marvel Library</title>
 </head>
 <body>
     <header>
         <h1> <img src='assets\images\Marvel_Logo.svg.png' width='25%'/> 
         <span style='font-size: 300%;'>ibrary</span></h1>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel='stylesheet' href='./assets/css/style.css'/>
     </header>
 
-    <div class='container'>
-        <form class='form'>
-            <label class='label'>Name:</label>
-            <input class='input' type='text' placeholder='A Character Name'>
-            <button id='inputTextButton'>Search</button>
-        </form>
-        <form class='form'>
-            <label class='label' for='characters'>Pick a Character:</label>
-            <select class='dropdown' name='characters' id='characters'>
-                <option value='Spider-Man'>Spider-Man</option>
-                <option value='Hulk'>Hulk</option>
-                <option value='Captain America'>Captain America</option>
-                <option value='Iron Man'>Iron Man</option>
-                <option value='Thanos'>Thanos</option>
-                <option value='Wolverine'>Wolverine</option>
-                <option value='Magneto'>Magneto</option>
-                <option value='Daredevil'>Daredevil</option>
-                <option value='Deadpool'>Deadpool</option>
-                <option value='Thor'>Thor</option>
-            </select>
-            
-            <button id='dropDownButton'>Search</button>
-        </form>
+  <body>
+    <div class="container">
+      <div class="input-field col s4">
+        <select>
+          <option value="" disabled selected>
+            Choose your Marvel Character
+          </option>
+          <option value="Spider-Man">Spider-Man</option>
+          <option value="Hulk">Hulk</option>
+          <option value="Captain America">Captain America</option>
+          <option value="Iron Man">Iron Man</option>
+          <option value="Thanos">Thanos</option>
+          <option value="Wolverine">Wolverine</option>
+          <option value="Magneto">Magneto</option>
+          <option value="Daredevil">Daredevil</option>
+          <option value="Deadpool">Deadpool</option>
+          <option value="Thor">Thor</option>
+        </select>
+        <label>Marvel Characters</label>
+      </div>
     </div>
-      <div class="spiderman" id="spider"><a href="https://en.wikipedia.org/wiki/Spider-Man"><h1>Spider-Man</h1></a>
-        <img src="assets/images/Web_of_Spider-Man_Vol_1_129-1.png" alt="Spider-Man">
-    <p>Spider-man was created by Stan Lee and Steve Ditko and debuted in Amazing Fantasy #15 in August of 1962.</p>
-    <p>Spider-Man has spider-like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and has amazing reflexes. Spider-Man also has a “spider sense,” that warns him of impending danger.</p>
-    </div>
-   <h3>Spider-Man Comics</h3>
-   <ul>
-       <li>The Amazing Spider-Man</li>
-       <li>Marvel Team Up</li>
-       <li>The Astonishing Spider-Man</li>
-       <li>Peter Parker, the Spectacular Spider-Man</li>
-       <li>Spider-Man Unlimited</li>
-       <li>Spider-Man </li>
-   </ul>
-</body>
+    <!-- 
+    
+      <form class="form">
+        <label class="label" for="characters">Pick a Character:</label>
+        <select class="dropdown" name="characters" id="characters">
+        
+          <option value="Iron Man">Iron Man</option>
+          <option value="Thanos">Thanos</option>
+          <option value="Wolverine">Wolverine</option>
+          <option value="Magneto">Magneto</option>
+          <option value="Daredevil">Daredevil</option>
+          <option value="Deadpool">Deadpool</option>
+          <option value="Thor">Thor</option>
+        </select>
+
+        <button id="dropDownButton">Search</button>
+      </form>
+     -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var sel = document.querySelectorAll("select");
+        M.FormSelect.init(sel);
+      });
+    </script>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </html>

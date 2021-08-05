@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+*{
+    text-align: center;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
@@ -37,3 +42,4 @@ body {
     font-size: 25px;
     transition: all 0.3s ease-in-out;
   }
+>>>>>>> e5646bc4b3015637e7012bd73e8fc527536c91d3

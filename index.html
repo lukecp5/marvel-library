@@ -23,43 +23,125 @@
 
   <body>
     <div class="container">
-      <div class="input-field col s4">
-        <select>
+      <div class="input-field s12 m6">
+        <select class="icons">
           <option value="" disabled selected>
             Choose your Marvel Character
           </option>
-          <option value="Spider-Man">Spider-Man</option>
-          <option value="Hulk">Hulk</option>
-          <option value="Captain America">Captain America</option>
-          <option value="Iron Man">Iron Man</option>
-          <option value="Thanos">Thanos</option>
-          <option value="Wolverine">Wolverine</option>
-          <option value="Magneto">Magneto</option>
-          <option value="Daredevil">Daredevil</option>
-          <option value="Deadpool">Deadpool</option>
-          <option value="Thor">Thor</option>
+          <option
+            value="Spider-Man"
+            data-icon="./assets/images/icon-spider-man.jpg"
+          >
+            Spider-Man
+          </option>
+          <option value="Hulk" data-icon="./assets/images/icon-hulk.jpg">
+            Hulk
+          </option>
+          <option
+            value="Captain America"
+            data-icon="./assets/images/icon-captain-america.jpg"
+          >
+            Captain America
+          </option>
+          <option
+            value="Iron Man"
+            data-icon="./assets/images/icon-iron-man.jpg"
+          >
+            Iron Man
+          </option>
+          <option value="Thanos" data-icon="./assets/images/icon-thanos.jpg">
+            Thanos
+          </option>
+          <option
+            value="Wolverine"
+            data-icon="./assets/images/icon-wolverine.jpg"
+          >
+            Wolverine
+          </option>
+          <option value="Magneto" data-icon="./assets/images/icon-magneto.jpg">
+            Magneto
+          </option>
+          <option
+            value="Daredevil"
+            data-icon="./assets/images/icon-daredevil.jpg"
+          >
+            Daredevil
+          </option>
+          <option
+            value="Deadpool"
+            data-icon="./assets/images/icon-deadpool.jpg"
+          >
+            Deadpool
+          </option>
+          <option value="Thor" data-icon="./assets/images/icon-thor.jpg">
+            Thor
+          </option>
         </select>
         <label>Marvel Characters</label>
       </div>
-    </div>
-    <!-- 
-    
-      <form class="form">
-        <label class="label" for="characters">Pick a Character:</label>
-        <select class="dropdown" name="characters" id="characters">
-        
-          <option value="Iron Man">Iron Man</option>
-          <option value="Thanos">Thanos</option>
-          <option value="Wolverine">Wolverine</option>
-          <option value="Magneto">Magneto</option>
-          <option value="Daredevil">Daredevil</option>
-          <option value="Deadpool">Deadpool</option>
-          <option value="Thor">Thor</option>
-        </select>
+      <!-- we put responses from marvel API in this card -->
+      <div class="row">
+        <div class="col s6">
+          <div class="card">
+            <div class="card-image">
+              <!-- we can get character picture from Marvel API and add to below img src: -->
+              <img src="#" />
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>
+                Data1:<span
+                  class="data1"
+                  id="data-1"
+                ></span>
+              </p>
+              <p>Data2:<span class="data2" id="data-2"></span></p>
+              <p>Data3:<span class="data3" id="data-3"></span></p>
+              <p>
+                Data4:<span
+                  class="data4"
+                  id="data-4"
+                ></span>
+              </p>
+            </div>
+            <div class="card-action">
+            <!-- we can add link below -->
+              <a href="#">Character Page Link</a>
+            </div>
+          </div>
+        </div>
+         <!-- we put responses from imdb  API in this card -->
+        <div class="col s6">
+          <div class="card">
+            <div class="card-image">
+              <!-- we can get any picture from imdb API and put in below img src, example: movie poster -->
+              <img src="#" />
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>
+                Data1:<span
+                  class="data1"
+                  id="data-1"
+                ></span>
+              </p>
+              <p>Data2:<span class="data2" id="data-2"></span></p>
+              <p>Data3:<span class="data3" id="data-3"></span></p>
+              <p>
+                Data4:<span
+                  class="data4"
+                  id="data-4"
+                ></span>
+              </p>
+            </div>
+            <div class="card-action">
+              <!-- we can add link below -->
+              <a href="#">imdb API</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <button id="dropDownButton">Search</button>
-      </form>
-     -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         var sel = document.querySelectorAll("select");
@@ -68,4 +150,5 @@
     </script>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./assets/js/script.js"></script>
 </html>

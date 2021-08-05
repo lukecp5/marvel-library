@@ -1,3 +1,7 @@
+*{
+    text-align: center;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
@@ -43,3 +47,6 @@ header {
 .select-dropdown {
   height: 200px;
 }
+    font-size: 25px;
+    transition: all 0.3s ease-in-out;
+  }

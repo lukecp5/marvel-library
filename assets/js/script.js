@@ -1,6 +1,21 @@
-$(document).ready(function () {
-  $("select").formSelect();
-});
+// this is imdb API
+function imdbApI() {
+  fetch("https://imdb-api.com/en/API/Search/k_raxvufjs/thor")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+      console.log(response);
+    });
+  console.log("response.json()");
+
+  console.log(response);
+}
+console.log("response.json()", response);
+
+imdbApI;
+// end of imdb API
 
 var publicKey = "c1847813d0c19807d9ed43f48afc4f36";
 var characters = [

@@ -1,3 +1,7 @@
+$(document).ready(function () {
+  $("select").formSelect();
+});
+
 var publicKey = "c1847813d0c19807d9ed43f48afc4f36";
 var characters = [
   "Hulk",
@@ -11,22 +15,25 @@ var characters = [
   "Thor",
 ];
 var charIds = {
-  "Wolverine": 1009718,
+  Wolverine: 1009718,
   "Captain America": "1009220",
-  "Thanos": 1009652,
+  Thanos: 1009652,
   "Iron Man": 1009368,
-  "Hulk": 1009351,
-  "Daredevil": 1009262,
-  "Magneto": 1009417,
-  "Thor": 1009664,
+  Hulk: 1009351,
+  Daredevil: 1009262,
+  Magneto: 1009417,
+  Thor: 1009664,
 };
 
 var ts = Date.now();
 for (char in characters) {
-  // Base URL that we insert each characters name into to get their ID and Marvel Name 
+  // Base URL that we insert each characters name into to get their ID and Marvel Name
   var baseURL =
-    "https://gateway.marvel.com:443/v1/public/characters?name=" + characters[char] + "&apikey=" + publicKey;
-  
+    "https://gateway.marvel.com:443/v1/public/characters?name=" +
+    characters[char] +
+    "&apikey=" +
+    publicKey;
+
   // Create a fetch function to gather the character ID's
   fetch(baseURL)
     .then(function (response) {
@@ -40,28 +47,32 @@ for (char in characters) {
 
       // Save the path to the useful data in the "result" variable so that we don't have to type out data.data.results[0] every time we want to use the information
       var result = data.data.results[0];
-      var name = result.name
+      var name = result.name;
       var charID = result.id;
 
       //The API call to the comics lists. The character ID is inserted to single out the character, and return a list of that characters comics. By default the limit is 20 results
-      fetch("https://gateway.marvel.com:443/v1/public/characters/" + charID + "/comics?apikey=c1847813d0c19807d9ed43f48afc4f36")
-      .then(function(response){
-        return response.json();
-      })
-      // The data in this fetch() function is returning the JSON version of the comics for the character
-      .then(function (data){
-        console.log(data);
-        // Here I began creating the HTML elements for each comic book returned for each character
-        // var comicList = document.createElement("ul");
-        // comicList.classList("list")
-        // for(i in data.data.results){
-        //   document.createElement("h1");
-        //   document.createElement("li")
-        // }
-      })
+      fetch(
+        "https://gateway.marvel.com:443/v1/public/characters/" +
+          charID +
+          "/comics?apikey=c1847813d0c19807d9ed43f48afc4f36"
+      )
+        .then(function (response) {
+          return response.json();
+        })
+        // The data in this fetch() function is returning the JSON version of the comics for the character
+        .then(function (data) {
+          console.log(data);
+          // Here I began creating the HTML elements for each comic book returned for each character
+          // var comicList = document.createElement("ul");
+          // comicList.classList("list")
+          // for(i in data.data.results){
+          //   document.createElement("h1");
+          //   document.createElement("li")
+          // }
+        });
     });
 
-    // The cards generated for each character
+  // The cards generated for each character
   var container = document.querySelector("#charCardHolder");
   var newChar = document.createElement("div");
   newChar.classList = "col s12 m3";

@@ -15,8 +15,8 @@
 </head>
 <body>
     <header>
-        <h1> <img src='assets\images\Marvel_Logo.svg.png' width='25%'/> 
-        <span style='font-size: 300%;'>ibrary</span></h1>
+        <h1> <img src='assets\images\Marvel_Logo.svg.png' width='25vw'/> 
+        <span style='font-size: 10vw;' class="flow-text">ibrary</span></h1>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel='stylesheet' href='./assets/css/style.css'/>
     </header>
@@ -82,44 +82,47 @@
       </div>
     </div>
     <div class="row">
-      <div class="col s12 center center-align">
-        <div class="row center-align">
-          <div class="col s4 center-align center-block offset-s4"><img src="" class="s3 circle responsive-img center-align" id="characterThumbnail"></div>
-        <div class="col s12">
-          <h1 class="center-align center-block" id="summaryTitle"></h1>
-        </div>
-      </div>
+      <div class="col s6">
       
-      </div>
+      <!-- <div class="col s6 center center-align"> -->
+        <div class="col s12 valign">
+          <div class="col s12 m6 center-align offset-s4"><img src="" class="circle responsive-img center-align" id="characterThumbnail"></div>
+          <!-- <h2 class="center-align center-block" id="summaryTitle"></h2> -->
+        </div>
+      <!-- </div> -->
     </div>
-      <!-- we put responses from marvel API in this card -->
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="card left-align">
-            <div class="card-title"></div>
-            <div class="card-content">
-              <p>Name: <span class="data1" id="charName"></span></p>
-              <p>Comics: <span class="data2" id="charComicCount"></span></p>
-              <p>Stories: <span class="data3" id="charStoryCount"></span></p>
-              <p>Marvel Wiki: <span class="data4"><a id="charWikiUrl"></a></span>
-              </p>
-            </div>
-            <div class="card-action">
+    <!-- we put responses from marvel API in this card -->
+    <div class="col s12 m6">
+      <div class="card small left-align">
+        <div class="card-title"><h3>Stats</h3></div>
+        <div class="card-content">
+          <p>Name: <span class="data1" id="charName"></span></p>
+          <p>Comics: <span class="data2" id="charComicCount"></span></p>
+          <p>Stories: <span class="data3" id="charStoryCount"></span></p>
+          <p>Marvel Wiki: <span class="data4"><a id="charWikiUrl"></a></span>
+          </p>
+        </div>
+        <div class="card-action">
             <!-- we can add link below -->
-              <a href="" id="characterPageUrl">Character Page Link</a>
-            </div>
+            <a href="" class="btn" id="characterPageUrl">Character Page Link</a>
           </div>
         </div>
-         <!-- we put responses from imdb  API in this card -->
-        <div class="col s12 m6">
-          <div class="card">
+      </div>
+    </div>
+  </div>
+    
+    <!-- we put responses from imdb  API in this card -->
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card small">
+            <div class="card-title"><h3>Movies</h3></div>
             <div class="card-content">
-              <p class="scroll" id="movie-list"></p> 
+              <ul id="movie-list"></ul> 
             </div>
             <!-- Button to display movie list -->
-            <div class="card-action">
+            <!-- <div class="card-action">
               <a class="waves-effect waves-light btn" id="movie-button">Must See Movies from Character</a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

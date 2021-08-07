@@ -3,16 +3,17 @@
 var movieList = document.getElementById("movie-list");
 var fetchButton = document.getElementById("movie-button");
 
-function imdbApi() {
-  var requestUrl = "https://imdb-api.com/en/API/SearchMovie/k_raxvufjs/thor";
+function imdbApi(character) {
+  var requestUrl = "https://imdb-api.com/en/API/SearchMovie/k_raxvufjs/" + character;
 
   fetch(requestUrl)
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
+          console.log(data)
       for (var i = 0; i < data.results.length; i++) {
-        var displayList = document.createElement("p");
+        var displayList = document.createElement("li");
         console.log(data.results[i].title);
         displayList.textContent = data.results[i].title;
         movieList.appendChild(displayList);
@@ -20,7 +21,7 @@ function imdbApi() {
     });
 }
 
-fetchButton.addEventListener("click", imdbApi);
+// fetchButton.addEventListener("click", imdbApi);
 
 // end of imdb API
 
@@ -29,7 +30,7 @@ var publicKey = "c1847813d0c19807d9ed43f48afc4f36";
 
 // Establish all of the required elements on the page as variables to be manipulated later
 var selectEl = document.querySelector("#characterSelect");
-var summaryTitleEl = document.querySelector("#summaryTitle");
+// var summaryTitleEl = document.querySelector("#summaryTitle");
 var nameEl = document.querySelector("#charName");
 var comicCountEl = document.querySelector("#charComicCount");
 var storyCountEl = document.querySelector("#charStoryCount");
@@ -40,18 +41,19 @@ var thumbnailEl = document.querySelector("#characterThumbnail");
 function setCharacterData(){
       // Get the value of the dropdown select box and store it in characterName
       var characterName = selectEl.value;
+      imdbApi(characterName);
       var spiderManName = ""
       // Set the api URL based on the selected character 
       if(characterName == "Spider-Man"){
             nameEl.textContent = characterName;
-            summaryTitleEl.textContent = characterName;
+            // summaryTitleEl.textContent = characterName;
             spiderManName = "Spider-Man (Peter Parker)";
             characterName = ""
       }
       var lowerCasedChar = characterName.toLowerCase();
       var baseURL = "https://gateway.marvel.com:443/v1/public/characters?name=" + characterName + spiderManName + "&apikey=" + publicKey;
       // Set header of info cards to the name of the selected character + summary
-      summaryTitleEl.textContent = characterName + " Summary";
+      // summaryTitleEl.textContent = characterName + " Summary";
       // Fetch statement to get the character ID and base data
       fetch(baseURL)
       .then(function(response){

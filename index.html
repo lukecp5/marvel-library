@@ -86,7 +86,6 @@
             <div class="card-image">
               <!-- we can get character picture from Marvel API and add to below img src: -->
               <img src="#" />
-              <span class="card-title">Card Title</span>
             </div>
             <div class="card-content">
               <p>
@@ -105,38 +104,19 @@
               </p>
             </div>
             <div class="card-action">
-            <!-- we can add link below -->
               <a href="#">Character Page Link</a>
             </div>
           </div>
         </div>
-         <!-- we put responses from imdb  API in this card -->
+         <!-- Container for movie list from imdb  API -->
         <div class="col s6">
-          <div class="card">
-            <div class="card-image">
-              <!-- we can get any picture from imdb API and put in below img src, example: movie poster -->
-              <img src="#" />
-              <span class="card-title">Card Title</span>
+          <div class="card" >
+            <div class="card-content" >
+              <p class="scroll" id="movie-list"></p> 
             </div>
-            <div class="card-content">
-              <p>
-                Data1:<span
-                  class="data1"
-                  id="data-1"
-                ></span>
-              </p>
-              <p>Data2:<span class="data2" id="data-2"></span></p>
-              <p>Data3:<span class="data3" id="data-3"></span></p>
-              <p>
-                Data4:<span
-                  class="data4"
-                  id="data-4"
-                ></span>
-              </p>
-            </div>
+            <!-- Button to display movie list -->
             <div class="card-action">
-              <!-- we can add link below -->
-              <a href="#">imdb API</a>
+              <a class="waves-effect waves-light btn" id="movie-button">Must See Movies from Character</a>
             </div>
           </div>
         </div>
@@ -148,6 +128,26 @@
         M.FormSelect.init(sel);
       });
     </script>
+
+        <!-- footer -->
+        <footer class="page-footer red darken-2">
+          <div class="container ">
+            <div class="row">
+              <h5 class="white-text">Contributors
+              </h5>
+              <a class="white-text text-lighten-3" href="https://github.com/lukecp5">Luke Poirrier    |</a>
+                  <a class="white-text text-lighten-3" href="https://github.com/ColinEtchen">Colin Etchen    |</a>
+                  <a class="white-text text-lighten-3" href="https://github.com/jamesgli520">James Li    |</a>
+                  <a class="white-text text-lighten-3" href="https://github.com/ekhosr">Ehsan Khosravi   </a>
+                
+            </div>
+          </div>
+          <div class="footer-copyright red accent-4">
+            <div class="container ">
+              © 2021 MarveLibrary
+            </div>
+          </div>
+        </footer>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="./assets/js/script.js"></script>

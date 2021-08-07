@@ -23,8 +23,9 @@
 
   <body>
     <div class="container">
+      <div class="row">
       <div class="input-field s12 m6">
-        <select class="icons">
+        <select class="icons" onchange="setCharacterData()" id="characterSelect">
           <option value="" disabled selected>
             Choose your Marvel Character
           </option>
@@ -79,39 +80,40 @@
         </select>
         <label>Marvel Characters</label>
       </div>
+    </div>
+    <div class="row">
+      <div class="col s12 center center-align">
+        <div class="row center-align">
+          <div class="col s4 center-align center-block offset-s4"><img src="" class="s3 circle responsive-img center-align" id="characterThumbnail"></div>
+        <div class="col s12">
+          <h1 class="center-align center-block" id="summaryTitle"></h1>
+        </div>
+      </div>
+      
+      </div>
+    </div>
       <!-- we put responses from marvel API in this card -->
       <div class="row">
-        <div class="col s6">
-          <div class="card">
-            <div class="card-image">
-              <!-- we can get character picture from Marvel API and add to below img src: -->
-              <img src="#" />
-            </div>
+        <div class="col s12 m6">
+          <div class="card left-align">
+            <div class="card-title"></div>
             <div class="card-content">
-              <p>
-                Data1:<span
-                  class="data1"
-                  id="data-1"
-                ></span>
-              </p>
-              <p>Data2:<span class="data2" id="data-2"></span></p>
-              <p>Data3:<span class="data3" id="data-3"></span></p>
-              <p>
-                Data4:<span
-                  class="data4"
-                  id="data-4"
-                ></span>
+              <p>Name: <span class="data1" id="charName"></span></p>
+              <p>Comics: <span class="data2" id="charComicCount"></span></p>
+              <p>Stories: <span class="data3" id="charStoryCount"></span></p>
+              <p>Marvel Wiki: <span class="data4"><a id="charWikiUrl"></a></span>
               </p>
             </div>
             <div class="card-action">
-              <a href="#">Character Page Link</a>
+            <!-- we can add link below -->
+              <a href="" id="characterPageUrl">Character Page Link</a>
             </div>
           </div>
         </div>
-         <!-- Container for movie list from imdb  API -->
-        <div class="col s6">
-          <div class="card" >
-            <div class="card-content" >
+         <!-- we put responses from imdb  API in this card -->
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content">
               <p class="scroll" id="movie-list"></p> 
             </div>
             <!-- Button to display movie list -->

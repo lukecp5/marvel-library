@@ -1,3 +1,9 @@
+
+body {
+    background-image: url("character\ images/");
+    background-color: #cccccc;
+   }
+
 li{
       list-style-type: none;
 }
@@ -5,3 +11,4 @@ li{
 html {
       font-family: GillSans, Calibri, Trebuchet, sans-serif;
     }
+

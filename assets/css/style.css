@@ -50,3 +50,8 @@ header {
     font-size: 25px;
     transition: all 0.3s ease-in-out;
   }
+
+  #characterThumbnail{
+    float: none;
+    width: 30vw;
+  }

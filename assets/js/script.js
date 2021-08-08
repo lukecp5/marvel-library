@@ -42,16 +42,30 @@ function setCharacterData(){
       // Get the value of the dropdown select box and store it in characterName
       var characterName = selectEl.value;
       imdbApi(characterName);
-      var spiderManName = ""
+      var altName="";
       // Set the api URL based on the selected character 
+      var lowerCasedChar = characterName.toLowerCase();
       if(characterName == "Spider-Man"){
             nameEl.textContent = characterName;
             // summaryTitleEl.textContent = characterName;
-            spiderManName = "Spider-Man (Peter Parker)";
+            altName = "Spider-Man (Peter Parker)";
             characterName = ""
-      }
-      var lowerCasedChar = characterName.toLowerCase();
-      var baseURL = "https://gateway.marvel.com:443/v1/public/characters?name=" + characterName + spiderManName + "&apikey=" + publicKey;
+            var lowerCasedChar = "spider-man"
+      }else if(characterName == "Captain America"){
+            nameEl.textContent = characterName;
+            // summaryTitleEl.textContent = characterName;
+            altName = "Captain America";
+            characterName = ""
+            var lowerCasedChar = "captain-america"
+      } 
+      else if(characterName == "Iron-Man"){
+            nameEl.textContent = characterName;
+            // summaryTitleEl.textContent = characterName;
+            altName = "Iron Man";
+            characterName = ""
+            var lowerCasedChar = "iron-man"
+      } 
+      var baseURL = "https://gateway.marvel.com:443/v1/public/characters?name=" + characterName + altName + "&apikey=" + publicKey;
       // Set header of info cards to the name of the selected character + summary
       // summaryTitleEl.textContent = characterName + " Summary";
       // Fetch statement to get the character ID and base data

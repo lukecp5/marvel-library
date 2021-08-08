@@ -1,4 +1,4 @@
-var characterName = "Wolverine";
+var characterName = "Daredevil";
 var publicKey = "c1847813d0c19807d9ed43f48afc4f36";
 var charIds = {
       "Wolverine": 1009718,

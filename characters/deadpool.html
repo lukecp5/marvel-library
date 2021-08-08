@@ -1,52 +1,71 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<html lang="en">
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-      <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deadpool</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./character.css">
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="container">
+      <div class="row" id="characterHeader">
+        <div class="col s12">
+        <a href="https://en.wikipedia.org/wiki/Deadpool"
+          ><h1 id="charName" class="characterTitle center-align">Deadpool</h1></a
+        >
+        <img
+          src=""
+          alt="Deadpool" id="characterThumbnail" class="col s6 offset-s3 responsive-img circle center-align centered" width="25%"
+        />
+      </div>
+        </div>
+      </div>
+        <div class="container">
+          <div class="row">
+        <p class="flow-text col s12">
+            Deadpool is a fictional character appearing in American comic books 
+            published by Marvel Comics. Created by writer Fabian Nicieza and artist/writer 
+            Rob Liefeld, the character first appeared in The New Mutants #98 
+            (cover-dated February 1991).        </p>
+      </div>
+      <div class="row">
+        <p class="flow-text col s12">
+            Deadpool's powers include a long list of abilities up to and including 
+            Regeneration, Extended longevity, Skilled marksman, swordsman, and hand-to-hand 
+            combatant, Using devices granting teleportation, and holographic disguise, 
+            Superhuman strength, durability, and agility.
+        </p>
+      </div>
+    </div>
+<div class="container">
+      <h3 id="comicListTitle" class="center-align"></h3>
+    </div>
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+      <div class="container">      
+      <ul id="comicList" class="center-align centered"></ul>
+    </div>
+    </main>
 
-    <body> <!--JavaScript at end of body for optimized loading-->
-        <main>
-            <div class="Deadpool" id="dead">
-            <a href="https://en.wikipedia.org/wiki/Deadpool"><h1>Deadpool</h1></a>
-            <img
-              src="character images/images-2.jpg"
-              alt="Deadpool"
-            />
-            <p>
-                Deadpool is a fictional character appearing in American comic books 
-                published by Marvel Comics. Created by writer Fabian Nicieza and artist/writer 
-                Rob Liefeld, the character first appeared in The New Mutants #98 
-                (cover-dated February 1991).
-             </p>
-
-            <h3>Super Powers</h3>
-
-            <p>
-                Deadpool's powers include a long list of abilities up to and including 
-                Regeneration, Extended longevity, Skilled marksman, swordsman, and hand-to-hand 
-                combatant, Using devices granting teleportation, and holographic disguise, 
-                Superhuman strength, durability, and agility
-            </p>
-          </div>
-          <h3>Deadpool Comics</h3>
-          <ul>
-            <li>Deadpool: Team-Up</li>
-            <li>Deadpool Kills the Marvel Universe</li>
-            <li>Deadpool: Suicide Kings</li>
-            <li>Deadpool vs. Carnage</li>
-            <li>Deadpool's Secret Secret Wars</li>
-            <li>Deadpool: Pulp</li>
-          </ul>
-          </main>
-        <!-- Compiled and minified JavaScript -->
+    <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
-    </body>
+    <script src="./deadpool.js"></script>
+  </body>
 </html>

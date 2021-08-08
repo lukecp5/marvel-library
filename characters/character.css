@@ -1,14 +1,41 @@
-
+:root {
+  --black: #070600ff;
+  --white: #eff9f0ff;
+  --primary: #ec1f27ff;
+  --gray: #6c756bff;
+  --yellow: #f7b32bff;
+}
 body {
-    background-image: url("character\ images/");
-    background-color: #cccccc;
-   }
+  background-image: url("character\ images/");
+  background-covlor: var(--white);
+  font-family: "Open Sans", sans-serif;
+}
 
-li{
-      list-style-type: none;
+li {
+  list-style-type: none;
 }
 
 html {
-      font-family: GillSans, Calibri, Trebuchet, sans-serif;
-    }
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
 
+.characterTitle {
+  color: var(--primary);
+}
+.btn{
+      background: var(--primary) !important;
+      color: var(--white);
+      margin-bottom: 1rem;
+}
+.btn a{
+      color: var(--white);
+}
+.card img{
+      padding-bottom: 1rem;
+}
+.red-bg{
+      background: var(--primary);
+}
+.gray-bg{
+      background: var(--gray);
+}

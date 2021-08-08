@@ -1,4 +1,4 @@
-var characterName = "Wolverine";
+var characterName = "Deadpool";
 var publicKey = "c1847813d0c19807d9ed43f48afc4f36";
 var charIds = {
       "Wolverine": 1009718,
@@ -9,6 +9,7 @@ var charIds = {
       "Daredevil": 1009262,
       "Magneto": 1009417,
       "Thor": 1009664,
+      "Deadpool": 1009268
     };
 var baseURL =
 "https://gateway.marvel.com:443/v1/public/characters?name=" + characterName + "&limit=50" + "&apikey=" + publicKey;

@@ -1,6 +1,7 @@
-var characterName = "Wolverine";
+var characterName = "Thanos";
 var publicKey = "c1847813d0c19807d9ed43f48afc4f36";
 var charIds = {
+      "Spider-Man": 1009610,
       "Wolverine": 1009718,
       "Captain America": "1009220",
       "Thanos": 1009652,

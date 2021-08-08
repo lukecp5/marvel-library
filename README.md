@@ -49,10 +49,7 @@
 
 ![Screenshot of deployed application](https://github.com/lukecp5/marvel-library/blob/main/assets/images/screenshot.png?raw=true)
 
-We are team Marvel Library (Luke Poirrier, Colin Etchenm, James Li, Ehsan Khosravi).
-We came from different background.
-As we came together to form a team for our first project, We are decided to build a application that only for marvel character searching,
-although we have many idea before we go for the idea of marvel library.
+Hi, we are team Marvel Library (Luke Poirrier, Colin Etchenm, James Li, Ehsan Khosravi). We all came from different backgrounds to create a project for fans of Marvel. We came together to form a team for our first project. We all learned a lot throughout the process, especially how to work on a team with other developers. We decided to build an application that allows the user to find out more about their favorite characters. 
 
 Motivation for development:
 

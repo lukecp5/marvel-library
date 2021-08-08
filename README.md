@@ -38,7 +38,6 @@
     </li>
     <li><a href="#mvp-features">MVP Features</a></li>
     <li><a href="#future-features">Future Features</a></li>
-    <li><a href="#dream-features">Dream Features</a></li>
     <li><a href="#contributors">Contributors</a></li>
     <li><a href="#links">Links</a></li>
   </ol>
@@ -60,7 +59,9 @@ Motivation for development:
 - We would like to offer a application for people who would like to know and learn about each marvel character.
 
 ### Built With
-
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [Materialize](https://materializecss.com/)
 - [JQuery](https://jquery.com)
 - [Marvel API](https://developer.marvel.com/)

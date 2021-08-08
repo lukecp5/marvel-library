@@ -132,3 +132,4 @@ Motivation for development:
 
 - [Project Link](https://github.com/lukecp5/marvel-library)
 - [Deployed Application](https://lukecp5.github.io/marvel-library/)
+- [Project Presentation](https://docs.google.com/presentation/d/1oKPOn8cHUJo5kUJcxkRl0xatjMRL9nJlkxaoJtiMy0Q/edit?usp=sharing)

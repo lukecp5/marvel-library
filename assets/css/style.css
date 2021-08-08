@@ -57,6 +57,7 @@ header {
   }
   .scroll {
     overflow: scroll;
+    overflow-x: hidden;
   }
   #characterThumbnail{
     float: none;

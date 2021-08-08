@@ -87,22 +87,22 @@ Motivation for development:
 
 1. Build out the frame of the user interface(header, containers, script imports, style imports, etc.)
 2. Get a list of marvel characters and make an array containing them(10+)
-3. Design a system with JS that creates cards/list items for a list of preselected marvel characters
-4. Build the click handlers for the cards, so that when the user clicks a character, their information and comics are displayed for the user
+3. Use JavaScript on the main page to gather data from the Marvel and IMDB APIs about the character's movies, thumbnail, and statistics when selected from the dropdown menu
+4. Build a click handler for the button below character stats, so that when the user clicks it, they are taken to that specific characters page
 5. Add a link to the characters wiki when clicked
-6. Add a button to the character page to take the user back to the main menu
+6. Create a template and use the Marvel data to populate the data for the selected character when a user navigates to the character page
+7. On the character page, dynamically generate cards for randomly selected comics from the character with a description, title, and link to buy it on Ebay
 
 <!-- MVP Features -->
-
 ## MVP Features
 
 - Thumbnail of character
 - Description of character(From Marvel or Wikipedia)
 - Characters origin year
 - List of comics including character
-- Link to the Wiki for the character
-- See a list of stories the character is involved in
-
+- Find each comic on Ebay
+- Link to the Wikipedia page for the character
+- Link to the Marvel Wiki page for the character
 <!-- Possible/Future features -->
 
 ## Future Features
@@ -112,11 +112,6 @@ Motivation for development:
 - Search OMDB for movies involving character
 - Populate random character every time you load the app
 - Add less known characters for people to learn about
-
-<!-- Dream Features -->
-
-## Dream Features
-
 - Find youtube videos involving the character
 - Theme based on favorite characters
 - Have a list of your favorite characters
@@ -138,4 +133,4 @@ Motivation for development:
 ## Links
 
 - [Project Link](https://github.com/lukecp5/marvel-library)
-- [Deployed Application](https://github.com/lukecp5/marvel-library)
+- [Deployed Application](https://lukecp5.github.io/marvel-library/)

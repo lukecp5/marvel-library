@@ -12,6 +12,7 @@ function imdbApi(character) {
     })
     .then(function (data) {
           console.log(data)
+          movieList.textContent = ""
       for (var i = 0; i < data.results.length; i++) {
         var displayList = document.createElement("li");
         console.log(data.results[i].title);

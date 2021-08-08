@@ -82,19 +82,17 @@ header {
     float: none;
     width: 30vw;
   }
-  /* ul{
-    max-height: 100%;
-  } */
 
-  /* ul{
-    overflow-y: scroll;
-  } */
-/* .card{
-  max-height: auto;
-}
-
-@media screen and (min-width: 480px) {
-  .card{
-    max-height: auto;
+  /* ! ~~~~~~Overrides for materialize default colors ~~~~~~ */
+  
+  .btn{
+  background: #ec1f27 !important;
   }
-} */
+
+
+
+
+
+
+
+  /* ! ~~~~~~ Media Queries ~~~~~~ */

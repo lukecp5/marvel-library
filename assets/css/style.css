@@ -76,7 +76,7 @@ header {
     /* overflow-inline: scroll;
     white-space: pre-line; */
     overflow: scroll;
-    text-overflow: ellipsis;
+    overflow-x: hidden;
   }
   #characterThumbnail{
     float: none;

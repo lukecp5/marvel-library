@@ -3,16 +3,16 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <img src="#!" alt="Logo" width="80" height="80">
+    <img src="https://github.com/lukecp5/marvel-library/blob/main/assets/images/marvel-library-logo.png?raw=true" alt="Logo">
 
   <h3 align="center">An Awesome Marvel Library!</h3>
 
   <p align="center">
-    <br />
+<!--     <br />
     <a href="https://github.com/lukecp5/marvel-library"><strong>Explore the docs »</strong></a>
+    <br /> -->
     <br />
-    <br />
-    <a href="https://github.com/lukecp5/marvel-library">View Demo</a>
+    <a href="https://lukecp5.github.io/marvel-library/">View Demo</a>
     ·
     <a href="https://github.com/lukecp5/marvel-library/issues">Report Bug</a>
     ·
@@ -48,7 +48,7 @@
 
 ## About The Project
 
-[![Project Screen Shot][product-screenshot]](https://example.com)
+![Screenshot of deployed application](https://github.com/lukecp5/marvel-library/blob/main/assets/images/screenshot.png?raw=true)
 
 We are team Marvel Library (Luke Poirrier, Colin Etchenm, James Li, Ehsan Khosravi).
 We came from different background.

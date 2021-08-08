@@ -62,18 +62,18 @@ fetch(comicURL)
             console.log(thumbnail + "." + thumbnailExt)
             var content = `<image src="${thumbnail}.${thumbnailExt}" style="max-width: 25%"><br>Title: ${title}`
             var cardContent = `  <div class="row center-align">
-            <div class="col s12 m8 blue center-block center-align">
+            <div class="col s12 gray-bg center-block center-align">
             <div class="card center-align">
             <div class="card-image col s3">
             <img src="${thumbnail}.${thumbnailExt}" class="circle" width="10vw">
             </div>
-            <h2 class="light-blue 600"><span class="card-title">${title}</span></h2>
+            <h2 class="flow-text red-bg"><span class="card-title">${title}</span></h2>
             </div>
             <div class="card-content">
             <p class="flow-text">${comicDescription}</p>
             </div>
             <div class="card-action flow-text">
-            <button class="btn"> <a href="https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=${title}&_sacat=0" class="black-text">Find it on Ebay</a></button>
+            <button class="btn"> <a href="https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=${title}&_sacat=0" class="">Find it on Ebay</a></button>
             </div>
             </div>
             </div>

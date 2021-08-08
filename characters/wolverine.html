@@ -26,15 +26,21 @@
     <header></header>
     <main>
       <div class="container">
-      <div class="spiderman" id="spider">
+      <div class="row" id="characterHeader">
+        <div class="col s12">
         <a href="https://en.wikipedia.org/wiki/Wolverine_(character)"
-          ><h1 id="charName" class="characterTitle">Wolverine</h1></a
+          ><h1 id="charName" class="characterTitle center-align">Wolverine</h1></a
         >
         <img
           src=""
-          alt="Wolverine" id="characterThumbnail" class="responsive-img"
+          alt="Wolverine" id="characterThumbnail" class="col s6 offset-s3 responsive-img circle center-align centered" width="25%"
         />
-        <p>
+      </div>
+        </div>
+      </div>
+        <div class="container">
+          <div class="row">
+        <p class="flow-text col s12">
           Wolverine (birth name: James Howlett; alias: Logan and Weapon X) is a
           fictional character appearing in American comic books published by
           Marvel Comics, mostly in association with the X-Men. He is a mutant
@@ -43,7 +49,9 @@
           retractable claws in each hand. Wolverine has been depicted variously
           as a member of the X-Men, Alpha Flight, and the Avengers.
         </p>
-        <p>
+      </div>
+      <div class="row">
+        <p class="flow-text col s12">
           Wolverine's primary mutant power is an accelerated healing process,
           typically referred to as his mutant healing factor, that regenerates
           damaged or destroyed tissues of his body far beyond that of normal
@@ -58,10 +66,16 @@
           milliliters of anesthetic a minute into his system.[
         </p>
       </div>
-</div>
-      <h3 id="comicListTitle"></h3>
-      <ul id="comicList"></ul>
+    </div>
+<div class="container">
+      <h3 id="comicListTitle" class="center-align"></h3>
+    </div>
+
+      <div class="container">      
+      <ul id="comicList" class="center-align centered"></ul>
+    </div>
     </main>
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="character.js"></script>

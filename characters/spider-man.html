@@ -20,49 +20,54 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-    <link rel="stylesheet" href="./character.css">
+    <link rel="stylesheet" href="./character.css" />
   </head>
   <body>
     <header></header>
     <main>
+      <a href="/index.html" class="waves-effect waves-light btn homeButton"
+        ><i class="material-icons left">home</i>Back to Home</a
+      >
       <div class="container">
-      <div class="row" id="characterHeader">
-        <div class="col s12">
-        <a href="https://en.wikipedia.org/wiki/Spider-Man"
-          ><h1 id="charName" class="characterTitle center-align">Spider Man</h1></a
-        >
+        <div class="row" id="characterHeader">
+          <div class="col s12">
+            <a href="https://en.wikipedia.org/wiki/Spider-Man"
+              ><h1 id="charName" class="characterTitle center-align">
+                Spider Man
+              </h1></a
+            >
 
-        <!-- ! Spider Man image was not loading from marvel, we'll have to add it manually  -->
-        <!-- <img
+            <!-- ! Spider Man image was not loading from marvel, we'll have to add it manually  -->
+            <!-- <img
           src=""
           alt="Spider Man" id="characterThumbnail" class="col s6 offset-s3 responsive-img circle center-align centered" width="25%"
         /> -->
-      </div>
+          </div>
         </div>
       </div>
-        <div class="container">
-          <div class="row">
-        <p class="flow-text col s12">
+      <div class="container">
+        <div class="row">
+          <p class="flow-text col s12">
             Spider-man was created by Stan Lee and Steve Ditko and debuted in
             Amazing Fantasy #15 in August of 1962.
-        </p>
+          </p>
+        </div>
+        <div class="row">
+          <p class="flow-text col s12">
+            Spider-Man has spider-like abilities including superhuman strength
+            and the ability to cling to most surfaces. He is also extremely
+            agile and has amazing reflexes. Spider-Man also has a “spider
+            sense,” that warns him of impending danger.
+          </p>
+        </div>
       </div>
-      <div class="row">
-        <p class="flow-text col s12">
-            Spider-Man has spider-like abilities including superhuman strength and
-            the ability to cling to most surfaces. He is also extremely agile and
-            has amazing reflexes. Spider-Man also has a “spider sense,” that warns
-            him of impending danger.
-        </p>
+      <div class="container">
+        <h3 id="comicListTitle" class="center-align"></h3>
       </div>
-    </div>
-<div class="container">
-      <h3 id="comicListTitle" class="center-align"></h3>
-    </div>
 
-      <div class="container">      
-      <ul id="comicList" class="center-align centered"></ul>
-    </div>
+      <div class="container">
+        <ul id="comicList" class="center-align centered"></ul>
+      </div>
     </main>
 
     <!-- Compiled and minified JavaScript -->

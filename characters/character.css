@@ -6,8 +6,7 @@
   --yellow: #f7b32bff;
 }
 body {
-  background-image: url("character\ images/");
-  background-covlor: var(--white);
+  background-color: var(--white);
   font-family: "Open Sans", sans-serif;
 }
 

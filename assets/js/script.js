@@ -14,7 +14,7 @@ window.onload = setData;
 
 function setData(){
       var savedCurrentCharacter = localStorage.getItem("currentCharacter");
-      console.log("Local Storage Data: " + savedCurrentCharacter);
+      // console.log("Local Storage Data: " + savedCurrentCharacter);
       selectEl.value = savedCurrentCharacter;
       setCharacterData();
 }
@@ -34,11 +34,11 @@ function imdbApi(character) {
       return response.json();
     })
     .then(function (data) {
-          console.log(data)
+      //     console.log(data)
           movieList.textContent = ""
       for (var i = 0; i < data.results.length; i++) {
         var displayList = document.createElement("li");
-        console.log(data.results[i].title);
+      //   console.log(data.results[i].title);
         displayList.textContent = data.results[i].title;
         movieList.appendChild(displayList);
       }
@@ -89,7 +89,7 @@ function setCharacterData(){
             return response.json();
       })
       .then(function(characterData){
-            console.log(characterData);
+            // console.log(characterData);
             var charId = characterData.data.results[0].id;
             var comicCount = characterData.data.results[0].comics.available;
             var storyCount = characterData.data.results[0].stories.available;
@@ -110,10 +110,10 @@ function setCharacterData(){
             storyCountEl.textContent = storyCount;
             marvelWikiEl.href = charWikiUrl;
             marvelWikiEl.textContent = characterName + " Wiki";
-            console.log(lowerCasedChar);
-            console.log(charPageLinkEl);
+            // console.log(lowerCasedChar);
+            // console.log(charPageLinkEl);
             charPageLinkEl.href= "./characters/" + lowerCasedChar + ".html";
-            console.log(charId);
+            // console.log(charId);
       })
 }
 // Marvel API End

@@ -27,7 +27,7 @@ fetch(baseURL)
       return response.json();
 })
 .then(function(data){
-      console.log(data);
+      // console.log\(.*\);
       var comics = data.data.results[0].comics.items;
       var characterThumbnailPath = data.data.results[0].thumbnail.path;
       var characterThumbnailExtension = data.data.results[0].thumbnail.extension;
@@ -46,7 +46,7 @@ fetch(comicURL)
       return response.json();
 })
 .then(function(data){
-      console.log(data);
+      // console.log\(.*\);
       var comics = data.data.results
       for(comic in comics){
             var title = data.data.results[comic].title;
@@ -55,11 +55,11 @@ fetch(comicURL)
             var thumbnail = data.data.results[comic].thumbnail.path;
             var thumbnailExt = data.data.results[comic].thumbnail.extension;
             var comicDescription = data.data.results[comic].description;
-            console.log(comicDescription);
+            // console.log\(.*\);
             if(!comicDescription){
                   comicDescription = "No description available";
             }
-            console.log(thumbnail + "." + thumbnailExt)
+            // console.log\(.*\)
             var content = `<image src="${thumbnail}.${thumbnailExt}" style="max-width: 25%"><br>Title: ${title}`
             var cardContent = `  <div class="row center-align">
             <div class="col s12 gray-bg center-block center-align">

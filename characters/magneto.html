@@ -20,51 +20,71 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-    <link rel="stylesheet" href="./character.css">
+    <link rel="stylesheet" href="./character.css" />
   </head>
   <body>
     <header></header>
+    <button onclick="topFunction()" id="upBtn" title="Go to top">Go Up</button>
+
     <main>
+      <a href="/index.html" class="waves-effect waves-light btn homeButton"
+        ><i class="material-icons left">home</i>Back to Home</a
+      >
       <div class="container">
-      <div class="row" id="characterHeader">
-        <div class="col s12">
-        <a href="https://en.wikipedia.org/wiki/Magneto_(Marvel_Comics)"
-          ><h1 id="charName" class="characterTitle center-align">Magneto</h1></a
-        >
-        <img
-          src=""
-          alt="Magneto" id="characterThumbnail" class="col s6 offset-s3 responsive-img circle center-align centered" width="25%"
-        />
-      </div>
+        <div class="row" id="characterHeader">
+          <div class="col s12">
+            <a href="https://en.wikipedia.org/wiki/Magneto_(Marvel_Comics)"
+              ><h1 id="charName" class="characterTitle center-align">
+                Magneto
+              </h1></a
+            >
+            <img
+              src=""
+              alt="Magneto"
+              id="characterThumbnail"
+              class="
+                col
+                s6
+                offset-s3
+                responsive-img
+                circle
+                center-align
+                centered
+              "
+              width="25%"
+            />
+          </div>
         </div>
       </div>
-        <div class="container">
-          <div class="row">
-        <p class="flow-text col s12">
-            Magneto was created by writer Stan Lee and artist Jack Kirby in 1963. 
-            He made his first appearance in X-Men #1, becoming the very first foe of the 
-            iconic mutant team. Creator Stan Lee stated that he "did not think of Magneto 
-            as a bad guy. He was just trying to strike back at the people who were so bigoted 
-            and racist. He was trying to defend mutants, and because society was not treating them 
-            fairly, he decided to teach society a lesson.
-        </p>
+      <div class="container">
+        <div class="row">
+          <p class="flow-text col s12">
+            Magneto was created by writer Stan Lee and artist Jack Kirby in
+            1963. He made his first appearance in X-Men #1, becoming the very
+            first foe of the iconic mutant team. Creator Stan Lee stated that he
+            "did not think of Magneto as a bad guy. He was just trying to strike
+            back at the people who were so bigoted and racist. He was trying to
+            defend mutants, and because society was not treating them fairly, he
+            decided to teach society a lesson.
+          </p>
+        </div>
+        <div class="row">
+          <p class="flow-text col s12">
+            Magneto's powers extend further than hanging spoons and forks on his
+            body; he can generate and manipulate magnetic fields. His powers
+            allow him to control metal, levitate himself and others, create
+            force fields, use telepathic mind control, and generate
+            electromagnetic pulses, among other abilities.
+          </p>
+        </div>
       </div>
-      <div class="row">
-        <p class="flow-text col s12">
-            Magneto's powers extend further than hanging spoons and forks on his body; 
-            he can generate and manipulate magnetic fields. His powers allow him to control 
-            metal, levitate himself and others, create force fields, use telepathic mind 
-            control, and generate electromagnetic pulses, among other abilities.
-        </p>
+      <div class="container">
+        <h3 id="comicListTitle" class="center-align"></h3>
       </div>
-    </div>
-<div class="container">
-      <h3 id="comicListTitle" class="center-align"></h3>
-    </div>
 
-      <div class="container">      
-      <ul id="comicList" class="center-align centered"></ul>
-    </div>
+      <div class="container">
+        <ul id="comicList" class="center-align centered"></ul>
+      </div>
     </main>
 
     <!-- Compiled and minified JavaScript -->

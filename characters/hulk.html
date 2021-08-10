@@ -20,47 +20,67 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-    <link rel="stylesheet" href="./character.css">
+    <link rel="stylesheet" href="./character.css" />
   </head>
   <body>
     <header></header>
-    <main>
-      <div class="container">
-      <div class="row" id="characterHeader">
-        <div class="col s12">
-        <a href="https://en.wikipedia.org/wiki/Hulk_(character)"
-          ><h1 id="charName" class="characterTitle center-align">Hulk</h1></a
-        >
-        <img
-          src=""
-          alt="Hulk" id="characterThumbnail" class="col s6 offset-s3 responsive-img circle center-align centered" width="25%"
-        />
-      </div>
-        </div>
-      </div>
-        <div class="container">
-          <div class="row">
-        <p class="flow-text col s12">
-            Incredible Hulk, American comic strip character created for Marvel Comics by 
-            writer Stan Lee and artist Jack Kirby. The towering muscle-bound antihero debuted in 
-            the bimonthly series The Incredible Hulk in May 1962.
-        </p>
-      </div>
-      <div class="row">
-        <p class="flow-text col s12">
-            Incredible superhuman strength, durability, and healing factor.
-            Becomes more powerful as anger increases.
-            As Bruce Banner, possesses a genius-level intellect & is an expert in multiple scientific fields, particularly the studies of physics & radiation.
-        </p>
-      </div>
-    </div>
-<div class="container">
-      <h3 id="comicListTitle" class="center-align"></h3>
-    </div>
+    <button onclick="topFunction()" id="upBtn" title="Go to top">Go Up</button>
 
-      <div class="container">      
-      <ul id="comicList" class="center-align centered"></ul>
+    <main>
+      <a href="/index.html" class="waves-effect waves-light btn homeButton"
+        ><i class="material-icons left">home</i>Back to Home</a
+      >
+      <div class="container">
+        <div class="row" id="characterHeader">
+          <div class="col s12">
+            <a href="https://en.wikipedia.org/wiki/Hulk_(character)"
+              ><h1 id="charName" class="characterTitle center-align">
+                Hulk
+              </h1></a
+            >
+            <img
+              src=""
+              alt="Hulk"
+              id="characterThumbnail"
+              class="
+                col
+                s6
+                offset-s3
+                responsive-img
+                circle
+                center-align
+                centered
+              "
+              width="25%"
+            />
+          </div>
         </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <p class="flow-text col s12">
+            Incredible Hulk, American comic strip character created for Marvel
+            Comics by writer Stan Lee and artist Jack Kirby. The towering
+            muscle-bound antihero debuted in the bimonthly series The Incredible
+            Hulk in May 1962.
+          </p>
+        </div>
+        <div class="row">
+          <p class="flow-text col s12">
+            Incredible superhuman strength, durability, and healing factor.
+            Becomes more powerful as anger increases. As Bruce Banner, possesses
+            a genius-level intellect & is an expert in multiple scientific
+            fields, particularly the studies of physics & radiation.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <h3 id="comicListTitle" class="center-align"></h3>
+      </div>
+
+      <div class="container">
+        <ul id="comicList" class="center-align centered"></ul>
+      </div>
     </main>
 
     <!-- Compiled and minified JavaScript -->

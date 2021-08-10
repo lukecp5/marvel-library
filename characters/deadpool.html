@@ -20,48 +20,68 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-    <link rel="stylesheet" href="./character.css">
+    <link rel="stylesheet" href="./character.css" />
   </head>
   <body>
     <header></header>
+    <button onclick="topFunction()" id="upBtn" title="Go to top">Go Up</button>
+
     <main>
+      <a href="/index.html" class="waves-effect waves-light btn homeButton"
+        ><i class="material-icons left">home</i>Back to Home</a
+      >
       <div class="container">
-      <div class="row" id="characterHeader">
-        <div class="col s12">
-        <a href="https://en.wikipedia.org/wiki/Deadpool"
-          ><h1 id="charName" class="characterTitle center-align">Deadpool</h1></a
-        >
-        <img
-          src=""
-          alt="Deadpool" id="characterThumbnail" class="col s6 offset-s3 responsive-img circle center-align centered" width="25%"
-        />
-      </div>
+        <div class="row" id="characterHeader">
+          <div class="col s12">
+            <a href="https://en.wikipedia.org/wiki/Deadpool"
+              ><h1 id="charName" class="characterTitle center-align">
+                Deadpool
+              </h1></a
+            >
+            <img
+              src=""
+              alt="Deadpool"
+              id="characterThumbnail"
+              class="
+                col
+                s6
+                offset-s3
+                responsive-img
+                circle
+                center-align
+                centered
+              "
+              width="25%"
+            />
+          </div>
         </div>
       </div>
-        <div class="container">
-          <div class="row">
-        <p class="flow-text col s12">
-            Deadpool is a fictional character appearing in American comic books 
-            published by Marvel Comics. Created by writer Fabian Nicieza and artist/writer 
-            Rob Liefeld, the character first appeared in The New Mutants #98 
-            (cover-dated February 1991).        </p>
+      <div class="container">
+        <div class="row">
+          <p class="flow-text col s12">
+            Deadpool is a fictional character appearing in American comic books
+            published by Marvel Comics. Created by writer Fabian Nicieza and
+            artist/writer Rob Liefeld, the character first appeared in The New
+            Mutants #98 (cover-dated February 1991).
+          </p>
+        </div>
+        <div class="row">
+          <p class="flow-text col s12">
+            Deadpool's powers include a long list of abilities up to and
+            including Regeneration, Extended longevity, Skilled marksman,
+            swordsman, and hand-to-hand combatant, Using devices granting
+            teleportation, and holographic disguise, Superhuman strength,
+            durability, and agility.
+          </p>
+        </div>
       </div>
-      <div class="row">
-        <p class="flow-text col s12">
-            Deadpool's powers include a long list of abilities up to and including 
-            Regeneration, Extended longevity, Skilled marksman, swordsman, and hand-to-hand 
-            combatant, Using devices granting teleportation, and holographic disguise, 
-            Superhuman strength, durability, and agility.
-        </p>
+      <div class="container">
+        <h3 id="comicListTitle" class="center-align"></h3>
       </div>
-    </div>
-<div class="container">
-      <h3 id="comicListTitle" class="center-align"></h3>
-    </div>
 
-      <div class="container">      
-      <ul id="comicList" class="center-align centered"></ul>
-    </div>
+      <div class="container">
+        <ul id="comicList" class="center-align centered"></ul>
+      </div>
     </main>
 
     <!-- Compiled and minified JavaScript -->

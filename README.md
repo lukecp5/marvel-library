@@ -60,7 +60,6 @@ Motivation for development:
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [Materialize](https://materializecss.com/)
-- [JQuery](https://jquery.com)
 - [Marvel API](https://developer.marvel.com/)
   ```sh
    https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=Spider-Man&orderBy=name&apikey=c1847813d0c19807d9ed43f48afc4f36

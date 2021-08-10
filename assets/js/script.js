@@ -1,3 +1,26 @@
+var selectEl = document.querySelector("#characterSelect");
+var publicKey = "c1847813d0c19807d9ed43f48afc4f36";
+
+// Establish all of the required elements on the page as variables to be manipulated later
+// var summaryTitleEl = document.querySelector("#summaryTitle");
+var nameEl = document.querySelector("#charName");
+var comicCountEl = document.querySelector("#charComicCount");
+var storyCountEl = document.querySelector("#charStoryCount");
+var marvelWikiEl = document.querySelector("#charWikiUrl");
+var charPageLinkEl = document.querySelector("#characterPageUrl");
+var thumbnailEl = document.querySelector("#characterThumbnail");
+
+window.onload = setData;
+
+function setData(){
+      var savedCurrentCharacter = localStorage.getItem("currentCharacter");
+      console.log("Local Storage Data: " + savedCurrentCharacter);
+      selectEl.value = savedCurrentCharacter;
+      setCharacterData();
+}
+
+
+
 //imdb API
 
 var movieList = document.getElementById("movie-list");
@@ -27,21 +50,12 @@ function imdbApi(character) {
 // end of imdb API
 
 // Marvel API Start
-var publicKey = "c1847813d0c19807d9ed43f48afc4f36";
-
-// Establish all of the required elements on the page as variables to be manipulated later
-var selectEl = document.querySelector("#characterSelect");
-// var summaryTitleEl = document.querySelector("#summaryTitle");
-var nameEl = document.querySelector("#charName");
-var comicCountEl = document.querySelector("#charComicCount");
-var storyCountEl = document.querySelector("#charStoryCount");
-var marvelWikiEl = document.querySelector("#charWikiUrl");
-var charPageLinkEl = document.querySelector("#characterPageUrl");
-var thumbnailEl = document.querySelector("#characterThumbnail");
 
 function setCharacterData(){
       // Get the value of the dropdown select box and store it in characterName
       var characterName = selectEl.value;
+      currentCharacter = characterName;
+      storeCurrentCharacter(currentCharacter);
       imdbApi(characterName);
       var altName="";
       // Set the api URL based on the selected character 
@@ -103,3 +117,7 @@ function setCharacterData(){
       })
 }
 // Marvel API End
+
+function storeCurrentCharacter(character){
+      localStorage.setItem("currentCharacter", currentCharacter);
+}

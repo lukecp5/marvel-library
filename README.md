@@ -132,3 +132,7 @@ Motivation for development:
 - [Project Link](https://github.com/lukecp5/marvel-library)
 - [Deployed Application](https://lukecp5.github.io/marvel-library/)
 - [Project Presentation](https://docs.google.com/presentation/d/1oKPOn8cHUJo5kUJcxkRl0xatjMRL9nJlkxaoJtiMy0Q/edit?usp=sharing)
+
+### License
+This application is licensed under the MIT License, you can find the full license information [here](https://github.com/lukecp5/marvel-library/blob/main/LICENSE.txt)
+
